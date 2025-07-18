@@ -1,4 +1,5 @@
 import random
+import hangman_words
 stages = [r'''
   +---+
   |   |
@@ -55,11 +56,11 @@ stages = [r'''
       |
 =========
 ''']
-word_list = ["aardvark", "baboon", "camel","shiphon","hello","apple"]
+
 
 lives = 6
 
-chosen_word = random.choice(word_list)
+chosen_word = random.choice(hangman_words)
 print(chosen_word)
 
 placeholder = ""
